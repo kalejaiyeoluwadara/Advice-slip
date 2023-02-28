@@ -1,0 +1,67 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&display=swap');
+*{
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   font-family: 'Fraunces', serif;
+}
+section{
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+    padding: 20px;
+    width: 100%;
+    background: hsl(218, 23%, 16%);
+}
+.container{
+    position: relative;
+    background: hsl(217, 19%, 24%);
+    margin: 0 auto;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    height: 300px;
+    width: 500px;
+}
+h1{
+    margin-top: 40px;
+    text-align: center;
+}
+p{
+    margin-top: 10px 0px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: hsl(150, 100%, 66%);
+}
+#line{
+    position: absolute;
+    bottom: 60px;
+}
+.send{
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    bottom: -30px;
+    background: hsl(150, 100%, 66%);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+}
+.send:hover{
+   box-shadow:0px 0px 14px 1px hsl(150deg 100% 66%);
+}
+
+@media only screen and (max-width:700px){
+
+.container{
+    height: 310px;
+    width: 400px;
+}
+}
